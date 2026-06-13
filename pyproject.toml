@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meok-compliance-passport-mcp"
+version = "1.0.0"
+description = "Agent Compliance Passport MCP server - portable, signed credentials AI agents carry to prove compliance with EU AI Act, GDPR, HIPAA, and 9 other frameworks. Verify offline in microseconds."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "meok.ai" }
+]
+keywords = ["mcp", "model-context-protocol", "ai-compliance", "eu-ai-act", "gdpr", "ed25519", "agent-identity", "a2a", "passport"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "mcp>=0.9.0",
+    "pydantic>=2.0",
+    "cryptography>=42.0",
+    "httpx>=0.25",
+]
+
+[project.scripts]
+meok-compliance-passport-mcp = "meok_compliance_passport_mcp.server:main"
+
+[project.urls]
+Homepage = "https://meok.ai"
+Documentation = "https://meok.ai/docs/passport"
+Repository = "https://github.com/meok-ai/meok-compliance-passport-mcp"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["meok_compliance_passport_mcp*"]

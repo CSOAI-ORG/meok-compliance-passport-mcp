@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.CSOAI-ORG/meok-compliance-passport-mcp",
+  "title": "MEOK Agent Compliance Passport",
+  "description": "Ed25519-signed offline-verifiable agent compliance passports. EU AI Act wedge.",
+  "version": "1.0.0",
+  "websiteUrl": "https://csoai.org",
+  "repository": {
+    "url": "https://github.com/CSOAI-ORG/meok-compliance-passport-mcp",
+    "source": "github"
+  },
+  "license": "MIT",
+  "keywords": [
+    "compliance",
+    "eu-ai-act",
+    "ed25519",
+    "passport",
+    "a2a",
+    "agent-identity",
+    "article-50"
+  ],
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "meok-compliance-passport-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
