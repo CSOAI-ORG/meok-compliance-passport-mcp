@@ -39,6 +39,9 @@ Homepage = "https://meok.ai"
 Documentation = "https://meok.ai/docs/passport"
 Repository = "https://github.com/meok-ai/meok-compliance-passport-mcp"
 
+[tool.setuptools]
+py-modules = ["mcp2026_shim"]
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["meok_compliance_passport_mcp*"]
